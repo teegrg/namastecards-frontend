@@ -20,14 +20,16 @@ function Cards() {
   }, []);
 
   return (
-    <div className="index">
-      {cards.map((card) => (
-        <div key={card.id} className="index-box">
-          <Card card={card} />
-          <Card1 card={card} />
-          <Card2 card={card} />
-        </div>
-      ))}
+    <div className="index-background">
+      <div className="index">
+        {cards.map((card) => (
+          <div key={card.id} className="index-box">
+            <Card card={card} />
+            <Card1 card={card} />
+            <Card2 card={card} />
+          </div>
+        ))}
+      </div>
     </div>
   );
 }

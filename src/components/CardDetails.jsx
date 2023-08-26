@@ -35,8 +35,8 @@ function CardDetails() {
   };
 
   return (
-    <>
-      <div className="show">
+    <div className="show-background">
+      <div className="show ">
         <p>Company: {card.company}</p>
         <p>Tag: {card.tag}</p>
         <p>Name: {card.name}</p>
@@ -58,7 +58,7 @@ function CardDetails() {
           Delete&nbsp;
         </div>
       </div>
-    </>
+    </div>
   );
 }
 

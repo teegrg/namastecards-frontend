@@ -26,16 +26,23 @@ function Reviews() {
 
 
   return (
+    <>
+    <h1 className="dropdown">Reviews</h1>
     <div className="review">
-      <h1>Reviews</h1>
+     
+      
+     
       <p>{reviewCount} reviews</p>
       <div>Write a Review</div>
       <input value={currentReview} onChange={handleChange} onKeyPress={handleKeyPress}></input>
       <button onClick={handleSubmit}>Submit</button>
+      <ul>
       {reviews.map((review, index) => (
-        <p key={index}>{review}</p>
+        <li  key={index}>{review}</li>
       ))}
+      </ul>
     </div>
+    </>
   );
 }
 

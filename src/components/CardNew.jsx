@@ -5,6 +5,7 @@ import { useNavigate } from "react-router-dom";
 import Card from "../components/card/Card";
 import Card1 from "../components/card/Card1";
 import Card2 from "../components/card/Card2";
+import pic from "../pages/image/cardpic.jpeg"
 
 const API = process.env.REACT_APP_API_URL;
 
@@ -157,11 +158,13 @@ function CardNew() {
                   />
                   <br />
                   <button onClick={() => window.print()}>Print</button>
+                  <button onClick={() => window.print()}>Save</button>
                 </form>
               </div>
             </div>
           </div>
         </article>
+        <img className="new-pic" src={pic} alt="" />
       </div>
     </>
   );
