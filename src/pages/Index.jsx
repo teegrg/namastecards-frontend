@@ -1,9 +1,7 @@
-import Cards from "../components/Cards"
+import Cards from "../components/Cards";
 
 function Index() {
-    return (
-        <Cards/>
-    )
-};
+  return <Cards />;
+}
 
 export default Index;

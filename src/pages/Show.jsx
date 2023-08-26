@@ -1,9 +1,7 @@
-import CardDetails from "../components/CardDetails"
+import CardDetails from "../components/CardDetails";
 
 function Show() {
-    return (
-        <CardDetails/>
-    )
-};
+  return <CardDetails />;
+}
 
 export default Show;

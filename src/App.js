@@ -4,7 +4,7 @@ import NavBar from "./components/NavBar";
 import Home from "./pages/Home";
 import Index from "./pages/Index";
 import New from "./pages/New";
-import Show from "./pages/Show"
+import Show from "./pages/Show";
 import Edit from "./pages/Edit";
 import Footer from "./components/Footer";
 import FourOFour from "./pages/FourOFour";
@@ -22,7 +22,7 @@ function App() {
           <Route path="/cards/:id/edit" element={<Edit />} />
           <Route path="*" element={<FourOFour />} />
         </Routes>
-        <Footer/>
+        <Footer />
       </Router>
     </div>
   );

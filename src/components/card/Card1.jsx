@@ -10,10 +10,10 @@ function Card1({ card }) {
       <div className="card1" style={cardStyle}>
         {card.company}
         <p>{card.email}</p>
-          <p>{card.phone}</p>
-          <p>{card.address}</p>
-          <p>{card.linkedin}</p>
-        </div>
+        <p>{card.phone}</p>
+        <p>{card.address}</p>
+        <p>{card.linkedin}</p>
+      </div>
     </Link>
   );
 }

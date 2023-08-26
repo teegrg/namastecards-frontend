@@ -30,15 +30,16 @@ function CardEdit() {
   };
 
   const handleTextChange = (event) => {
-    setCard({...card, [event.target.id] : event.target.value});
+    setCard({ ...card, [event.target.id]: event.target.value });
     // console.log(event.target.id);
     // console.log(event.target.value);
   };
 
   useEffect(() => {
-    axios.get(`${API}/cards/${id}`)
-    .then((res) => setCard(res.data))
-    .catch((e) => navigate("/not-found"))
+    axios
+      .get(`${API}/cards/${id}`)
+      .then((res) => setCard(res.data))
+      .catch((e) => navigate("/not-found"));
   }, [id, navigate]);
 
   const handleSubmit = (event) => {
@@ -47,7 +48,7 @@ function CardEdit() {
   };
 
   return (
-    <article className="Quote-Details">
+    <article>
       <div className="card-container">
         <div className="card-form">
           <div className="">
@@ -132,7 +133,7 @@ function CardEdit() {
                 onChange={handleTextChange}
               />
               <br />
-             <button>Submit</button>
+              <button>Submit</button>
             </form>
           </div>
         </div>

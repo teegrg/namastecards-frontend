@@ -5,14 +5,13 @@ import { useNavigate } from "react-router-dom";
 import Card from "../components/card/Card";
 import Card1 from "../components/card/Card1";
 import Card2 from "../components/card/Card2";
-import pic from "../pages/image/cardpic.jpeg"
+import pic from "../pages/image/cardpic.jpeg";
 
 const API = process.env.REACT_APP_API_URL;
 
 function CardNew() {
   const navigate = useNavigate();
   const [selected, setSelected] = useState("Choose one template");
-  
 
   const addCard = (newCards) => {
     axios
@@ -47,7 +46,6 @@ function CardNew() {
     addCard(card);
   };
 
-  
   return (
     <>
       <select
@@ -64,31 +62,32 @@ function CardNew() {
         <div className="printable-content">
           {selected === "white" ? (
             <div>
-            <Card card={card} />
-            <Card card={card} />
-            <Card card={card} />
-            <Card card={card} />
-            <Card card={card} />
+              <Card card={card} />
+              <Card card={card} />
+              <Card card={card} />
+              <Card card={card} />
+              <Card card={card} />
             </div>
           ) : selected === "image" ? (
             <div>
-            <Card1 card={card} />
-            <Card1 card={card} />
-            <Card1 card={card} />
-            <Card1 card={card} />
-            <Card1 card={card} />
+              <Card1 card={card} />
+              <Card1 card={card} />
+              <Card1 card={card} />
+              <Card1 card={card} />
+              <Card1 card={card} />
             </div>
           ) : selected === "black" ? (
             <div>
-            <Card2 card={card} />
-            <Card2 card={card} />
-            <Card2 card={card} />
-            <Card2 card={card} />
-            <Card2 card={card} />
+              <Card2 card={card} />
+              <Card2 card={card} />
+              <Card2 card={card} />
+              <Card2 card={card} />
+              <Card2 card={card} />
             </div>
           ) : null}
         </div>
-        <article className="Quote-Details">
+        <div className="dotted-line"></div>
+        <article>
           <div className="card-container">
             <div className="card-form">
               <div className="">
@@ -175,7 +174,7 @@ function CardNew() {
                   />
                   <br />
                   <button onClick={() => window.print()}>Print</button>
-                  <button onClick={() => window.print()}>Save</button>
+                  <button onClick={handleSubmit}>Save</button>
                 </form>
               </div>
             </div>
