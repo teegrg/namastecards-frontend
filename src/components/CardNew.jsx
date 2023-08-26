@@ -15,7 +15,6 @@ function CardNew() {
   
 
   const addCard = (newCards) => {
-    console.log(newCards);
     axios
       .post(`${API}/cards`, newCards)
       .then(() => navigate("/cards"))
@@ -57,18 +56,36 @@ function CardNew() {
         className="new-select"
         onChange={handleSelectChange}>
         <option value="">Choose one template</option>
-        <option value="white">White Background</option>
-        <option value="image">Image Background</option>
-        <option value="black">Black Background</option>
+        <option value="white">White background</option>
+        <option value="image">Image background</option>
+        <option value="black">Black background</option>
       </select>
       <div className="new-wrapper">
         <div className="printable-content">
           {selected === "white" ? (
+            <div>
             <Card card={card} />
+            <Card card={card} />
+            <Card card={card} />
+            <Card card={card} />
+            <Card card={card} />
+            </div>
           ) : selected === "image" ? (
+            <div>
             <Card1 card={card} />
+            <Card1 card={card} />
+            <Card1 card={card} />
+            <Card1 card={card} />
+            <Card1 card={card} />
+            </div>
           ) : selected === "black" ? (
+            <div>
             <Card2 card={card} />
+            <Card2 card={card} />
+            <Card2 card={card} />
+            <Card2 card={card} />
+            <Card2 card={card} />
+            </div>
           ) : null}
         </div>
         <article className="Quote-Details">

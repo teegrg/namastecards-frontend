@@ -326,10 +326,40 @@ button {
   padding: 50px 0 0 50px;
 }
 
-select {
+/* select {
  background-color: #e7e7e7;
  padding: 0 10px 0 10px;
  border-radius: 5px;
+} */
+
+new-select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-color: #e7e7e7;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.new-select:hover {
+  background-color: #ddd;
+}
+
+.new-select:focus {
+  background-color: #ccc;
+}
+
+.new-select option {
+  background-color: #f8f8f8;
+  color: #333;
+}
+
+.new-select:hover option {
+  display: block; /* Display options on hover */
 }
 
 .new-pic {
