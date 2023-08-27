@@ -26,11 +26,12 @@ function Reviews() {
 
   return (
     <>
-      <h1 className="review-head">Reviews</h1>
       <div className="review">
+      <h1 className="review-head">Reviews</h1>
         <p>{reviewCount} reviews</p>
-        <div>Write a Review</div>
+        <div className="review-div">Write a Review</div>
         <input
+          className="review-input"
           value={currentReview}
           onChange={handleChange}
           onKeyPress={handleKeyPress}></input>
