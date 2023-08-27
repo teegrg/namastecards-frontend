@@ -49,7 +49,7 @@ function CardEdit() {
 
   return (
     <article>
-      <div className="card-container">
+      <div className="card-container edit-form">
         <div className="card-form">
           <div className="">
             <form onSubmit={handleSubmit}>

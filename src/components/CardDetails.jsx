@@ -45,8 +45,8 @@ function CardDetails() {
         <p>Cell: {card.cell}</p>
         <p>Address: {card.address}</p>
         <p>Linkedin: {card.linkedin}</p>
-      </div>
       <div className="show-img">Image: {card.image}</div>
+      </div>
       <div className="buttons">
         <Link to={`/cards`}>
           <div className="btn">Back&nbsp;</div>
