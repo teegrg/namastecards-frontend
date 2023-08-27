@@ -10,12 +10,12 @@ function Home() {
         <hr className="home-hr" />
         <div className="home-text">
           <span>
-            &nbsp;&nbsp;&nbsp;&nbsp;Get your customized buissness Cards.
+            &nbsp;&nbsp;&nbsp;&nbsp;Get your customized business Cards.
           </span>
           <br />
           <hr />
           <br />
-          &nbsp;&nbsp;&nbsp;&nbsp;When it comes to marketing, a buisness card
+          &nbsp;&nbsp;&nbsp;&nbsp;When it comes to marketing, a business card
           can go a long way. This handy item can be used in so many ways – from
           direct mail campaigns to invites, giveaways and more. Whether you’re
           hosting a special event or advertising your online store, give
@@ -23,13 +23,13 @@ function Home() {
           portable card.
           <br /> &nbsp;&nbsp;&nbsp;&nbsp;Business cards are a popular way to add
           a personalized, professional touch. We offer a variety of customizable
-          options. Choose the your own paper stock, thickness that will make
+          options. Choose your own paper stock, thickness that will make
           your card a delight for recipients to receive. We offer services if
-          you’re looking for a quick and affordable way to make buisness cards.
+          you’re looking for a quick and affordable way to make business cards.
           <br />
-          &nbsp;&nbsp;&nbsp;&nbsp;Are you ready for your own buisness card? Use
+          &nbsp;&nbsp;&nbsp;&nbsp;Are you ready for your own business card? Use
           our design option or choose your own background image to make it yours
-          by adding all your key information and hit print your cards that is
+          by adding all your key information and hitting print, that is
           ready to get to work.
           <br />
         </div>
