@@ -5,7 +5,7 @@ import { useNavigate } from "react-router-dom";
 import Card from "../components/card/Card";
 import Card1 from "../components/card/Card1";
 import Card2 from "../components/card/Card2";
-import pic from "../pages/image/cardpic.jpeg";
+import pic from "../pages/image/uploadpic.png";
 
 const API = process.env.REACT_APP_API_URL;
 
@@ -40,6 +40,11 @@ function CardNew() {
     setSelected(event.target.value);
     //console.log(selected);
   };
+
+  const handlePrint = () => {
+    alert("Heads-up, if you cant see the background on print view. When print view pops up go to more settings and click on Background graphics ")
+    window.print();
+  }
 
   const handleSubmit = (event) => {
     event.preventDefault();
@@ -173,7 +178,7 @@ function CardNew() {
                     onChange={handleTextChange}
                   />
                   <br />
-                  <button onClick={() => window.print()}>Print</button>
+                  <button onClick={handlePrint}>Print</button>
                   <button onClick={handleSubmit}>Save</button>
                 </form>
               </div>
