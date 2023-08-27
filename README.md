@@ -2,8 +2,9 @@
 
 Welcome to NAMASTE CARDS! This web application displays sample business cards fetched from a database. It provides an easy way to create and print your own business card.  
     The webpage will be providing postcards, id card, greeting cards with more sample and variation in near future.
-    
+
 Here's the link to the backend, [GitHub](https://github.com/teegrg/namastecards).
+Deployed link, (https://namastecards.onrender.com).
 
 
 ## Features
