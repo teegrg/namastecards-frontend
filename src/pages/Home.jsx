@@ -6,7 +6,6 @@ function Home() {
     <>
       <div className="home">
         <div className="background-img"></div>
-
         <hr className="home-hr" />
         <div className="home-text">
           <span>
@@ -23,14 +22,14 @@ function Home() {
           portable card.
           <br /> &nbsp;&nbsp;&nbsp;&nbsp;Business cards are a popular way to add
           a personalized, professional touch. We offer a variety of customizable
-          options. Choose your own paper stock, thickness that will make
-          your card a delight for recipients to receive. We offer services if
-          you’re looking for a quick and affordable way to make business cards.
+          options. Choose your own paper stock, thickness that will make your
+          card a delight for recipients to receive. We offer services if you’re
+          looking for a quick and affordable way to make business cards.
           <br />
           &nbsp;&nbsp;&nbsp;&nbsp;Are you ready for your own business card? Use
           our design option or choose your own background image to make it yours
-          by adding all your key information and hitting print, that is
-          ready to get to work.
+          by adding all your key information and hitting print, that is ready to
+          get to work.
           <br />
         </div>
         <hr className="home-hr" />

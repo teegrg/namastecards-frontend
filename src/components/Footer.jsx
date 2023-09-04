@@ -7,7 +7,7 @@ function Footer() {
         <div className="footer-wrapper">
             
         <div className="footer">
-            <p>EAT, CODE AND SLEEP©</p>
+            <p>EAT, CODE AND SLEEP ©</p>
             <p>Pursuit 9.6</p>
             <p>All Rights Reserved</p>
         </div>

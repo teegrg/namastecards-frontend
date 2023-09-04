@@ -3,36 +3,38 @@ body {
   /* background-color: white; */
 }
 
-nav {
+/* navbar */
+
+.navbar {
   display: flex;
   justify-content: space-between;
-  height: 50px;
+  padding: 10px 20px;
   background-color: #f1f1f1;
-  padding-left: 10px;
+  /* color: black; */
+}
+
+.navbar-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.bar {
+  width: 20px;
+  height: 2.5px;
+  background-color: rgb(16, 15, 15);
+  margin: 3px 0;
 }
 
 .nav-end {
   display: flex;
-  justify-content: flex-end;
-  gap: 25px;
   align-items: flex-end;
-  padding:0 10px 5px 0;
-  
+  gap: 20px;
 }
-
-.nav-end {
-  position: relative;
-  color: #767575; 
-  text-decoration: none;
-  padding:5px 2px; 
-  transition: padding-bottom 0.3s; 
-  padding-left: 15px;
-}
-
 a {
   text-decoration: none;
   color: #333;
-}
+} 
 
 hr {
   margin: 0;
@@ -392,15 +394,6 @@ new-select {
 .review:hover:after {
   height: 100%;
 }
- 
-/* FourOFour */
-/* .fourOfour {
-  background-image: url("./pages/image/business-card.png");
-  background-position: center;
-  height: 100vh;
-  width: 100vh;
-  z-index: -1;
-} */
 
 .fourOfour-h1 {
   display: flex;
@@ -413,15 +406,11 @@ new-select {
   height: 100vh;
   width: 100vh;
   z-index: -1;
-
-
 }
 
+/* Media query for mobile devices */
+
 @media screen and (max-width: 600px) {
-  nav {
-    height: 85px;
-    padding-bottom: 3px;
-  }
 
   .new-pic {
     display: none;
@@ -429,29 +418,74 @@ new-select {
   .background-img {
     display: none;
   }
-.home-image {
-  display: none;
+  .home-image {
+    display: none;
+  }
+  .home-text {
+    text-align: center;
+    padding: 5px;
+  }
+
+  .review {
+    width: 45%;
+  }
+  .review-head {
+    padding-top: 35px;
+  }
+
+  .card-form {
+    width: 150px;
+  }
+
+  .review {
+    width: 100%;
+  }
+  .review div {
+    width: 30%;
+    padding-left: 18px;
+  }
+  .review-input {
+    width: 35%;
+  }
 }
 
-.review {
-  width: 45%;
-}
-.review-head {
-  padding-top: 65px;
-}
+@media (max-width: 768px) {
+  .navbar-toggle {
+    display: flex;
+    justify-content: center;
+  }
 
-.card-form {
-  width: 150px;
-}
+  .nav-end {
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    right: 5px;
+    background-color: #d1d1d1;
+    opacity: 0.9;
+    width: 340px;
+    height: 110px;
+    padding: 20px;
+    margin-top: 45px;
+    gap: 10px;
+    transform: scaley(0);
+    transform-origin:top;
+    transition: transform 0.2s ease-in;
+    z-index: 1;
+  }
 
-.review {
-  width: 100%;
-}
-.review div {
-  width: 30%;
-  padding-left: 18px;
-}
-.review-input {
-  width: 35%;
-}
+  .nav-end.open {
+    transform: scale(1);
+  }
+
+  .nav-link {
+    font-size: x-large;
+  }
+  
+  .nav-header {
+    font-size: xx-large;
+  }
+
+  .nav-link:hover {
+    background-color: #b8b8b8;
+  }
 }
