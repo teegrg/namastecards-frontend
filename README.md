@@ -9,8 +9,7 @@ Deployed link, (https://namastecards.onrender.com).
 
 ## Features
 
-- Display a about and review section on landing page.
-- Option to fetch all quotes, filter by favorite, and order by author's name.
+- Displays home on landing page with collection and customize links.
 - Create, update, and delete card via API.
 - Simple and intuitive interface.
 
@@ -43,17 +42,17 @@ Deployed link, (https://namastecards.onrender.com).
 10. You have option to eiher print or save the card you have created.
 11. You will be able to print 5 cards. Cut through the dotted lines.
 12. You have your own business card.
-13. A little thicker paper stock preferably 12pt paper is recommended for better card   feel.
+13. A little thicker paper stock preferably 12pt paper is recommended for better card feel.
 
 ## Contributing
 Contributions are welcome! Please follow these steps to contribute:
 
 1. Fork the repository and npm install dependencies.
-1. Create a new branch for your changes.
-1. Make your modifications and enhancements.
-1. Test your changes to ensure they work correctly.
-1. Commit and push your changes to your forked repository.
-1. Create a pull request to submit your changes for review.
+2. Create a new branch for your changes.
+3. Make your modifications and enhancements.
+4. Test your changes to ensure they work correctly.
+5. Commit and push your changes to your forked repository.
+6. Create a pull request to submit your changes for review.
 
 
-Connect with us on [linkedin](https://www.linkedin.com/in/tsheringgurungny)
+Connect on [linkedin](https://www.linkedin.com/in/tsheringgurungny)
