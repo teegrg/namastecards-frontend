@@ -59,7 +59,6 @@ function NavBar() {
           <div className="bar"></div>
         </div>
       </nav>
-      <hr />
     </>
   );
 }

@@ -141,7 +141,7 @@ function CardNew() {
               <article>
                 <div className="card-container">
                   <div className="card-form">
-                    <div className="">
+                    <div className="form">
                       <form onSubmit={handleSubmit}>
                         <label htmlFor="company">Company:</label>
                         <input
@@ -184,7 +184,7 @@ function CardNew() {
                           type="text"
                           name="phone"
                           value={card.phone}
-                          placeholder=" date"
+                          placeholder="phone"
                           onChange={handleTextChange}
                         />
                         <label htmlFor="cell">Cell:</label>
@@ -224,8 +224,10 @@ function CardNew() {
                           onChange={handleTextChange}
                         />
                         <br />
-                        <button onClick={handlePrint}>Print</button>
-                        <button onClick={handleSubmit}>Save</button>
+                      <div className="form__btn">
+                        <button className="form__btn1"onClick={handlePrint}>Print</button>
+                        <button className="form__btn2"onClick={handleSubmit}>Save</button>
+                      </div>
                       </form>
                     </div>
                   </div>
