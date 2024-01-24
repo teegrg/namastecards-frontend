@@ -64,7 +64,7 @@ function Reviews() {
           <div className="review">
           <h1 className="review-head">Reviews</h1>
             <p>{reviewCount} reviews</p>
-            <div className="review-div"> <Link to="/reviews">View a Reviews</Link></div>
+            <div className="review-div"> <Link to="/reviews">View Reviews</Link></div>
             {/* <input
               className="review-input"
               value={currentReview}
